@@ -1,0 +1,270 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "860e6d01-86df-4ef8-9638-1a80a1ccb884")
+	(paper "A4")
+	(lib_symbols)
+	(text "SMART IRRIGATION MANAGER"
+		(exclude_from_sim no)
+		(at 148.082 38.1 0)
+		(effects
+			(font
+				(size 8 8)
+			)
+		)
+		(uuid "78cd501e-2cd7-493a-8023-92c587941fb9")
+	)
+	(sheet
+		(at 119.38 85.09)
+		(size 36.83 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "31695168-2746-474b-9de2-7134d7486a82")
+		(property "Sheetname" "OUTPUT_CONTROL"
+			(at 119.38 84.3784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "output_control.kicad_sch"
+			(at 119.38 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068/c894e362-d512-41ef-a89c-3090e41a3477"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 175.26 116.84)
+		(size 35.56 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3ca025ff-4a49-4d1a-b10b-44d50c43fba7")
+		(property "Sheetname" "USER-INTERFACE"
+			(at 175.26 116.1284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "userinterface.kicad_sch"
+			(at 175.26 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068/c894e362-d512-41ef-a89c-3090e41a3477"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 175.26 86.36)
+		(size 35.56 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "500a43c9-2469-4332-8f19-772cc5a4f7e8")
+		(property "Sheetname" "POWER SUPPLY UNIT"
+			(at 175.26 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power-supply-unit.kicad_sch"
+			(at 175.26 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068/c894e362-d512-41ef-a89c-3090e41a3477"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 53.34)
+		(size 36.83 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5e104d62-928f-456b-80c8-1d9bff940e13")
+		(property "Sheetname" "CPU_SECTION"
+			(at 118.11 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cpu_section.kicad_sch"
+			(at 118.11 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068/c894e362-d512-41ef-a89c-3090e41a3477"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 119.38 116.84)
+		(size 36.83 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "871f9b8f-7496-4b03-9c75-9ae1a187b508")
+		(property "Sheetname" "WIFI AND COMMS"
+			(at 119.38 116.1284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "wifi_and_comms.kicad_sch"
+			(at 119.38 135.2046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068/c894e362-d512-41ef-a89c-3090e41a3477"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 175.26 53.34)
+		(size 34.29 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "de174813-c099-46c2-9a7c-9566dfb3a398")
+		(property "Sheetname" "SENSORS AND INPUTS"
+			(at 175.26 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors_and_inputs.kicad_sch"
+			(at 175.26 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068/c894e362-d512-41ef-a89c-3090e41a3477"
+					(page "6")
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "8093b267-91c9-45cb-83bb-ee50b7242068")
+	(paper "B")
+	(lib_symbols)
+	(sheet
+		(at 154.94 104.14)
+		(size 82.55 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c894e362-d512-41ef-a89c-3090e41a3477")
+		(property "Sheetname" "Master"
+			(at 154.94 103.4284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "master.kicad_sch"
+			(at 154.94 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
