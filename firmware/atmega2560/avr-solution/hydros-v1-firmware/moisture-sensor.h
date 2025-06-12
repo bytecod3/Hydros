@@ -9,6 +9,8 @@
 #ifndef MOISTURE_SENSOR_H_
 #define MOISTURE_SENSOR_H_
 
+#include <stdint.h>
+
 typedef struct MoistureSensor* MoistureSensor_t;
 
 void MoistureSensor_init(MoistureSensor_t, uint8_t);
