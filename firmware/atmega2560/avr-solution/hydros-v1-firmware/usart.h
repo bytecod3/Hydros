@@ -8,6 +8,6 @@
 void USART_init(unsigned int ubrr);
 void USART_transmit(unsigned char data);
 unsigned char USART_receive();
-void USART_put_string();
+void USART_put_string(char*);
 
 #endif
