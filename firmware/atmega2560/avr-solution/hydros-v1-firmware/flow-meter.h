@@ -9,7 +9,8 @@
 #ifndef FLOW_METER_H_
 #define FLOW_METER_H_
 
-
+void flow_meter_interrupt_init();
+float flow_meter_get_flow_rate(int);
 
 
 

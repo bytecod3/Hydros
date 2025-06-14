@@ -47,7 +47,6 @@ uint8_t timer1_delay_1s_CTC(){
 
 void timer1_delay_1s_non_blocking() {
 	TCCR1B |= (1 << WGM12);					// set timer1 to CTC mode
-	
 	TIMSK1 |= (1 << OCIE1A);				// enable CTC interrupt
 	sei();									// enable global interrupts
 	OCR1A = 15624;							// set compare value - this value is pre-calculated - 1 second

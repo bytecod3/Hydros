@@ -6,6 +6,7 @@
 
 
 #include <avr/io.h>
+#include <stdio.h>
 #include "usart.h"
 
 void USART_init(unsigned int ubrr) {
@@ -38,6 +39,18 @@ void USART_put_string(char* pstr) {
 		USART_transmit(*pstr);
 		pstr++;
 	}
+}
+
+void USART_send_int(int a) {
+	char b[10];
+	sprintf(b, "%d\r\n", a);
+	USART_put_string(b);
+}
+
+void USART_send_float(float a) {
+	char b[10];
+	sprintf(b, "%.2f\r\n", a);
+	USART_put_string(b);
 }
 
 

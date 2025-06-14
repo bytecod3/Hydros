@@ -8336,7 +8336,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 91.44) (xy 114.3 91.44)
+			(xy 107.95 91.44) (xy 118.11 91.44)
 		)
 		(stroke
 			(width 0)
@@ -10154,16 +10154,6 @@
 		)
 		(uuid "9f8f6ee0-d184-49b8-863f-a2e484ca0ec8")
 	)
-	(label "MCU_FLASH_CS"
-		(at 114.3 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "aacbd71d-19bf-446c-a195-aea1371cc15f")
-	)
 	(label "SD_CS"
 		(at 83.82 218.44 0)
 		(effects
@@ -10564,7 +10554,7 @@
 	)
 	(global_label "MCU_FLASH_CS"
 		(shape input)
-		(at 114.3 91.44 0)
+		(at 118.11 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10574,7 +10564,7 @@
 		)
 		(uuid "3cf9ba56-21b1-4983-bee4-f3fe7301d3f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.9976 91.44 0)
+			(at 133.8076 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
