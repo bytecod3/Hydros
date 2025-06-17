@@ -39,6 +39,7 @@ SUBDIRS :=
 C_SRCS +=  \
 ../bh1750.c \
 ../bme280.c \
+../ds18b20.c \
 ../flow-meter.c \
 ../main.c \
 ../moisture-sensor.c \
@@ -55,6 +56,7 @@ ASM_SRCS +=
 OBJS +=  \
 bh1750.o \
 bme280.o \
+ds18b20.o \
 flow-meter.o \
 main.o \
 moisture-sensor.o \
@@ -64,6 +66,7 @@ timer-helpers.o
 OBJS_AS_ARGS +=  \
 bh1750.o \
 bme280.o \
+ds18b20.o \
 flow-meter.o \
 main.o \
 moisture-sensor.o \
@@ -73,6 +76,7 @@ timer-helpers.o
 C_DEPS +=  \
 bh1750.d \
 bme280.d \
+ds18b20.d \
 flow-meter.d \
 main.d \
 moisture-sensor.d \
@@ -82,6 +86,7 @@ timer-helpers.d
 C_DEPS_AS_ARGS +=  \
 bh1750.d \
 bme280.d \
+ds18b20.d \
 flow-meter.d \
 main.d \
 moisture-sensor.d \
@@ -110,6 +115,13 @@ LINKER_SCRIPT_DEP+=
 	
 
 ./bme280.o: .././bme280.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../external-libraries"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./ds18b20.o: .././ds18b20.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../external-libraries"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

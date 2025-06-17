@@ -6,6 +6,8 @@ bh1750.c
 
 bme280.c
 
+ds18b20.c
+
 flow-meter.c
 
 main.c
