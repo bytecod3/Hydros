@@ -1149,7 +1149,7 @@
 	)
 	(text "LED INDICATION STRIP TO BE MOUNTED OFF-BOARD\nAND CONNECTED TO MOTHERBOARD USING JST CONNECTOR\nAS LABELLED\n"
 		(exclude_from_sim no)
-		(at 199.136 98.806 0)
+		(at 202.184 98.806 0)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -5,12 +5,14 @@
 	(uuid "860e6d01-86df-4ef8-9638-1a80a1ccb884")
 	(paper "A4")
 	(lib_symbols)
-	(text "SMART IRRIGATION MANAGER"
+	(text "Hydros"
 		(exclude_from_sim no)
-		(at 148.082 38.1 0)
+		(at 160.02 40.64 0)
 		(effects
 			(font
 				(size 8 8)
+				(thickness 1.6)
+				(bold yes)
 			)
 		)
 		(uuid "78cd501e-2cd7-493a-8023-92c587941fb9")

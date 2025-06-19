@@ -4429,6 +4429,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part#" "C2913198"
+			(at 236.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "27"
 			(uuid "b5c7702a-0f38-4ac2-a4f0-540bc26ed56c")
 		)

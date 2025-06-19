@@ -4168,6 +4168,12 @@
 		(uuid "cf46a927-8d8a-47a4-ac83-f9da715eb4b9")
 	)
 	(junction
+		(at 67.31 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0b45fad-5d9e-4e1b-97f7-2842e8cef68b")
+	)
+	(junction
 		(at 81.28 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4234,6 +4240,16 @@
 			(type default)
 		)
 		(uuid "066ac48e-37e9-4762-abe1-a5d7cc5fb247")
+	)
+	(wire
+		(pts
+			(xy 67.31 148.59) (xy 77.47 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0934a6f8-a5f9-4777-b8c3-48e7a344f29f")
 	)
 	(wire
 		(pts
@@ -4487,7 +4503,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 148.59) (xy 66.04 148.59)
+			(xy 50.8 148.59) (xy 57.15 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4927,6 +4943,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 123.19) (xy 110.49 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e56d72-a0cb-41c3-b518-e39a6696a1b0")
+	)
+	(wire
+		(pts
 			(xy 195.58 90.17) (xy 198.12 90.17)
 		)
 		(stroke
@@ -4967,7 +4993,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 148.59) (xy 77.47 148.59)
+			(xy 64.77 148.59) (xy 67.31 148.59)
 		)
 		(stroke
 			(width 0)
@@ -5034,6 +5060,16 @@
 			(type default)
 		)
 		(uuid "b20f5590-6c9b-48d6-b9e6-d118e92b48a5")
+	)
+	(wire
+		(pts
+			(xy 67.31 135.89) (xy 67.31 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b249764a-2bdc-49a8-82bb-eba64a71e538")
 	)
 	(wire
 		(pts
@@ -5287,7 +5323,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 181.61) (xy 59.69 153.67)
+			(xy 50.8 181.61) (xy 50.8 153.67)
 		)
 		(stroke
 			(width 0)
@@ -5387,6 +5423,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 123.19) (xy 110.49 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f16508a6-5cfc-4bbd-86f1-0a3ca520b7fd")
+	)
+	(wire
+		(pts
 			(xy 139.7 130.81) (xy 139.7 133.35)
 		)
 		(stroke
@@ -5424,6 +5470,16 @@
 			(type default)
 		)
 		(uuid "f6afcace-333b-4cb7-b548-4b6caf1a248c")
+	)
+	(wire
+		(pts
+			(xy 67.31 140.97) (xy 67.31 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8cfaa81-b4cc-43f5-a563-42800438f30b")
 	)
 	(wire
 		(pts
@@ -5722,9 +5778,9 @@
 		(at 93.98 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0b0cf78a-b2f6-4dca-8ec8-aa447a80a432")
 		(property "Reference" "U18"
@@ -5810,9 +5866,9 @@
 		(at 87.63 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0ba462e8-f3b9-4b0b-bbdc-9e73e5258b86")
 		(property "Reference" "Q9"
@@ -5854,6 +5910,15 @@
 		)
 		(property "Description" "3.9A Id, 30V Vds, Dual N and P Channel MOSFET, 65mOhm Ron, 10V Vgs, SO8L"
 			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C5123913"
+			(at 87.63 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6184,7 +6249,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BAT54J")
-		(at 69.85 148.59 180)
+		(at 60.96 148.59 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6193,7 +6258,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b352145-351e-49be-a518-3ac306124248")
 		(property "Reference" "D26"
-			(at 70.1675 142.24 0)
+			(at 61.2775 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6201,7 +6266,7 @@
 			)
 		)
 		(property "Value" "BAT54J"
-			(at 70.1675 144.78 0)
+			(at 61.2775 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6209,7 +6274,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323F"
-			(at 69.85 144.145 0)
+			(at 60.96 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6218,7 +6283,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
-			(at 69.85 148.59 0)
+			(at 60.96 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6227,7 +6292,16 @@
 			)
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
-			(at 69.85 148.59 0)
+			(at 60.96 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C86299"
+			(at 60.96 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7742,9 +7816,9 @@
 		(at 73.66 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6b65d637-7adc-466b-b045-e9da288d3e0b")
 		(property "Reference" "R48"
@@ -8464,9 +8538,9 @@
 		(at 77.47 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "86d902b1-7c00-4174-9eed-62ca2b0beea6")
 		(property "Reference" "R49"
 			(at 80.01 154.94 0)
@@ -8687,9 +8761,9 @@
 		(at 73.66 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8df10a91-f47a-4f61-914a-97b177a0d0d4")
 		(property "Reference" "R46"
@@ -8972,7 +9046,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Jack-DC")
-		(at 52.07 151.13 0)
+		(at 43.18 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8981,7 +9055,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a047944-03a9-4a00-9299-878fcfc55971")
 		(property "Reference" "J17"
-			(at 52.07 142.24 0)
+			(at 43.18 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8989,7 +9063,7 @@
 			)
 		)
 		(property "Value" "Jack-DC"
-			(at 52.07 144.78 0)
+			(at 43.18 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8997,7 +9071,7 @@
 			)
 		)
 		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
-			(at 53.34 152.146 0)
+			(at 44.45 152.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9006,7 +9080,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 152.146 0)
+			(at 44.45 152.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9015,7 +9089,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack"
-			(at 52.07 151.13 0)
+			(at 43.18 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9024,7 +9098,7 @@
 			)
 		)
 		(property "LCSC Part#" "C720558"
-			(at 52.07 151.13 0)
+			(at 43.18 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9115,7 +9189,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 181.61 0)
+		(at 50.8 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9124,7 +9198,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9fc4b6c-a243-4e72-ac95-2115a2c136f3")
 		(property "Reference" "#PWR0166"
-			(at 59.69 187.96 0)
+			(at 50.8 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9133,7 +9207,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 186.69 0)
+			(at 50.8 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9141,7 +9215,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 181.61 0)
+			(at 50.8 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9150,7 +9224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 181.61 0)
+			(at 50.8 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9159,7 +9233,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 181.61 0)
+			(at 50.8 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9369,6 +9443,15 @@
 			)
 		)
 		(property "Description" "3.8-30V, 2A  Synchronous Buck Converters with pulse frequency modulation (PFM), SOT583-8"
+			(at 195.58 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C3032935"
 			(at 195.58 135.89 0)
 			(effects
 				(font
@@ -9753,6 +9836,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part#" "C20616758"
+			(at 110.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "fcb4791f-72b4-4d58-ba0b-c5d631d37c6b")
 		)
@@ -9821,6 +9913,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 240.03 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C2828857"
 			(at 240.03 93.98 0)
 			(effects
 				(font
@@ -9913,12 +10014,91 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 73.66 179.07 0)
+		(at 67.31 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb2b0e65-3994-4942-a781-e327e1a4ff70")
+		(property "Reference" "R66"
+			(at 69.85 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 69.85 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C17477"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f48dfb23-c0c0-434c-b108-728f2b331c14")
+		)
+		(pin "2"
+			(uuid "d041eead-29d5-4be0-9fc2-6fe0f7869e96")
+		)
+		(instances
+			(project "smart-irrigation-manager"
+				(path "/8093b267-91c9-45cb-83bb-ee50b7242068/c894e362-d512-41ef-a89c-3090e41a3477/500a43c9-2469-4332-8f19-772cc5a4f7e8"
+					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 73.66 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "bd2d024c-1823-4dd8-9e9b-a474c1de08d7")
 		(property "Reference" "R47"
@@ -10329,9 +10509,9 @@
 		(at 102.87 133.35 90)
 		(unit 2)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "cba9e2c9-6ffb-4582-9b9c-f79202875472")
 		(property "Reference" "Q9"
@@ -10373,6 +10553,15 @@
 		)
 		(property "Description" "3.9A Id, 30V Vds, Dual N and P Channel MOSFET, 65mOhm Ron, 10V Vgs, SO8L"
 			(at 102.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C5123913"
+			(at 102.87 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10525,6 +10714,15 @@
 			)
 		)
 		(property "Description" "3A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, continuous-conduction, SOT-23-6"
+			(at 173.99 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C168839"
 			(at 173.99 77.47 0)
 			(effects
 				(font
@@ -11459,6 +11657,15 @@
 			)
 		)
 		(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+			(at 285.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C404027"
 			(at 285.75 138.43 0)
 			(effects
 				(font

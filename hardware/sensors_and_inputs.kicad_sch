@@ -5733,7 +5733,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part#" ""
+		(property "LCSC Part#" "C49678"
 			(at 127 97.79 0)
 			(effects
 				(font
@@ -8463,6 +8463,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part#" "C1549752"
+			(at 285.75 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "4d5ebf77-2014-4d0c-a421-d99095e67247")
 		)
@@ -9836,7 +9845,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part#" ""
+		(property "LCSC Part#" "C430601"
 			(at 67.31 240.03 0)
 			(effects
 				(font
@@ -10257,6 +10266,15 @@
 			)
 		)
 		(property "Description" "3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"
+			(at 190.5 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part#" "C92489"
 			(at 190.5 179.07 0)
 			(effects
 				(font
