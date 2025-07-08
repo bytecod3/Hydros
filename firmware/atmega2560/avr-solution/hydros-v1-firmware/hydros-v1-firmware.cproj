@@ -140,6 +140,12 @@
     <Compile Include="configs.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="ds18b20-untested.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ds18b20-untested.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="ds18b20.c">
       <SubType>compile</SubType>
     </Compile>
@@ -150,6 +156,18 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="flow-meter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="onewire.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="onewire.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="romsearch.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="romsearch.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="timer-helpers.h">

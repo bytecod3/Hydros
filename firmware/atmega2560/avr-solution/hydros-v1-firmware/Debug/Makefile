@@ -39,8 +39,11 @@ SUBDIRS :=
 C_SRCS +=  \
 ../bh1750.c \
 ../bme280.c \
+../ds18b20-untested.c \
 ../ds18b20.c \
 ../flow-meter.c \
+../onewire.c \
+../romsearch.c \
 ../main.c \
 ../moisture-sensor.c \
 ../usart.c \
@@ -56,8 +59,11 @@ ASM_SRCS +=
 OBJS +=  \
 bh1750.o \
 bme280.o \
+ds18b20-untested.o \
 ds18b20.o \
 flow-meter.o \
+onewire.o \
+romsearch.o \
 main.o \
 moisture-sensor.o \
 usart.o \
@@ -66,8 +72,11 @@ timer-helpers.o
 OBJS_AS_ARGS +=  \
 bh1750.o \
 bme280.o \
+ds18b20-untested.o \
 ds18b20.o \
 flow-meter.o \
+onewire.o \
+romsearch.o \
 main.o \
 moisture-sensor.o \
 usart.o \
@@ -76,8 +85,11 @@ timer-helpers.o
 C_DEPS +=  \
 bh1750.d \
 bme280.d \
+ds18b20-untested.d \
 ds18b20.d \
 flow-meter.d \
+onewire.d \
+romsearch.d \
 main.d \
 moisture-sensor.d \
 usart.d \
@@ -86,8 +98,11 @@ timer-helpers.d
 C_DEPS_AS_ARGS +=  \
 bh1750.d \
 bme280.d \
+ds18b20-untested.d \
 ds18b20.d \
 flow-meter.d \
+onewire.d \
+romsearch.d \
 main.d \
 moisture-sensor.d \
 usart.d \
@@ -121,6 +136,13 @@ LINKER_SCRIPT_DEP+=
 	@echo Finished building: $<
 	
 
+./ds18b20-untested.o: .././ds18b20-untested.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../external-libraries"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 ./ds18b20.o: .././ds18b20.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
@@ -129,6 +151,20 @@ LINKER_SCRIPT_DEP+=
 	
 
 ./flow-meter.o: .././flow-meter.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../external-libraries"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./onewire.o: .././onewire.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../external-libraries"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./romsearch.o: .././romsearch.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../external-libraries"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
